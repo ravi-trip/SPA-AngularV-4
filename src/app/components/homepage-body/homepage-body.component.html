@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div id="homepage-maincontent-container">
+  <div id="homepage-details-list">
+      <!-- <ul class="homepage-details-list-items">
+        <li id="homepage-shopnow-banner">
+            <a href="">
+                <img src="{{imageDetails1.imageLink}}" alt="">
+            </a>
+        </li>  
+        <li id="homepage-midseasonsale-banner">
+            <a href="">
+                <img src="{{imageDetails2.imageLink}}" alt="">
+            </a>
+        </li>
+        <li id="homepage-yourpmaffairs-ondutystyles-items">
+            <div class="yourpmaffairs-ondutystyles">
+                <a href="">
+                    <img src="{{imageDetails3.imageLink}}" alt="">
+                </a>
+            </div>
+            
+            <div class="yourpmaffairs-ondutystyles">
+                <a href="">
+                    <img src="{{imageDetails4.imageLink}}" alt="">
+                </a>
+            </div>
+        </li>
+        <li id="homepage-eventdressing-banner">
+
+        </li>
+      </ul> -->
+  </div>
+  <div style="margin-left:300px" *ngFor ="let image of images" >
+      <h1>{{image.title}}</h1>
+      <img src="{{image.url}}" alt="">
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,13 @@
+<app-header></app-header>
+<p>
+  details works!
+</p>
+<div style="margin-left:300px" *ngFor ="let post of posts" >
+  <h1>{{post.title}}</h1>
+  <p>{{post.body}}</p>
+</div>
+<div style="margin-left:300px" *ngFor ="let image of images" >
+  <h1>{{image.title}}</h1>
+  <img src="{{image.url}}" alt="">
+</div>
+<app-footer></app-footer>
